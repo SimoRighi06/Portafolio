@@ -90,9 +90,9 @@
   // Schede case study: dati demo modificabili qui.
   const projectData = {
     forma: {
-      number: '01', title: 'Forma Studio',
-      description: 'Una nuova esperienza digitale per uno studio creativo che mette al centro il pensiero visivo. Un sistema essenziale, ritmo tipografico deciso e interazioni discrete trasformano il portfolio in una parte viva dell’identità.',
-      scope: 'Digital design · Art direction', year: '2026'
+      number: '01', title: 'Righi-IDE',
+      description: 'impara con la AI a programme e impara sporcandoti le mani.',
+      scope: 'Istruzione', year: '2026' 
     },
     nord: {
       number: '02', title: 'Nord Objects',

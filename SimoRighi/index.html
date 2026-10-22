@@ -2,280 +2,364 @@
 <html lang="it">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f2">
-  <meta name="description" content="Portfolio personale di design e sviluppo digitale.">
-  <title>Nome Cognome® — Digital Designer & Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f2">
+    <meta name="description" content="Portfolio personale di design e sviluppo digitale.">
+    <title>Simone Righi — Front-End Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
 
 <body>
-  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
-  <div class="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Torna all'inizio">NOME COGNOME<span>®</span></a>
-    <nav class="desktop-nav" aria-label="Navigazione principale">
-      <a href="#work">Progetti <span>01</span></a>
-      <a href="#about">Profilo <span>02</span></a>
-      <a href="#contact">Contatti <span>03</span></a>
+    <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Torna all'inizio">SIMONE RIGHI<span>®</span></a>
+        <nav class="desktop-nav" aria-label="Navigazione principale">
+            <a href="#stack">Stack <span>00</span></a>
+            <a href="#work">Progetti <span>01</span></a>
+            <a href="#about">Profilo <span>02</span></a>
+            <a href="#contact">Contatti <span>03</span></a>
+        </nav>
+        <a class="header-cta magnetic" href="#contact"><span class="status-dot"></span> Disponibile per progetti <span
+                class="arrow">↗</span></a>
+        <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Navigazione mobile" aria-hidden="true">
+        <a href="#stack"><span>00</span> Stack <b>↗</b></a>
+        <a href="#work"><span>01</span> Progetti <b>↗</b></a>
+        <a href="#about"><span>02</span> Profilo <b>↗</b></a>
+        <a href="#contact"><span>03</span> Contatti <b>↗</b></a>
+        <p>DESIGN · DEVELOPMENT · DIRECTION</p>
     </nav>
-    <a class="header-cta magnetic" href="#contact"><span class="status-dot"></span> Disponibile per progetti <span
-        class="arrow">↗</span></a>
-    <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="mobileMenu">
-      <span></span><span></span>
-    </button>
-  </header>
 
-  <nav class="mobile-menu" id="mobileMenu" aria-label="Navigazione mobile" aria-hidden="true">
-    <a href="#work"><span>01</span> Progetti <b>↗</b></a>
-    <a href="#about"><span>02</span> Profilo <b>↗</b></a>
-    <a href="#contact"><span>03</span> Contatti <b>↗</b></a>
-    <p>DESIGN · DEVELOPMENT · DIRECTION</p>
-  </nav>
+    <main>
+        <!-- Aggiorna le tecnologie qui sotto con linguaggi e framework che conosci davvero. -->
 
-  <main>
-    <section class="hero section-shell" aria-labelledby="heroTitle">
-      <div class="hero-topline reveal">
-        <span class="eyebrow"><span class="eyebrow-line"></span> PORTFOLIO INDIPENDENTE · 2026</span>
-        <span class="hero-location">BASE IN ITALIA <span class="location-dot">↗</span></span>
-      </div>
 
-      <div class="hero-main">
-        <div class="hero-copy">
-          <p class="hero-kicker reveal">DESIGNER DIGITALE & CREATIVE DEVELOPER</p>
-          <h1 id="heroTitle" class="hero-title">
-            <span class="title-line reveal">IDEE <span class="title-outline">IN</span></span>
-            <span class="title-line reveal delay-1">FORMA<span class="lime-period">.</span></span>
-            <span class="title-line title-third reveal delay-2">DIGITALE<span class="asterisk">✳</span></span>
-          </h1>
-          <div class="hero-bottom reveal delay-3">
-            <p>Creo esperienze digitali essenziali, riconoscibili e costruite per lasciare il segno.</p>
-            <a class="round-link magnetic" href="#work" aria-label="Scopri i progetti"><span>SCOPRI<br>I
-                PROGETTI</span><b>↓</b></a>
-          </div>
-        </div>
+        <section class="hero section-shell" aria-labelledby="heroTitle">
 
-        <div class="hero-art reveal delay-2" aria-label="Composizione astratta verde lime e nera" role="img">
-          <div class="art-grid"></div>
-          <div class="art-index">FIG. 001<br>FORMA / FUNZIONE</div>
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-disc"><span>n°</span><strong>01</strong></div>
-          <div class="art-cross cross-one">+</div>
-          <div class="art-cross cross-two">+</div>
-          <div class="art-caption">CREATIVITY<br>IN MOTION</div>
-          <div class="art-arrow">↗</div>
-        </div>
-      </div>
+            <div class="hero-main">
+                <div class="hero-copy">
+                    <p class="hero-kicker reveal">DESIGNER DIGITALE & CREATIVE DEVELOPER</p>
+                    <h1 id="heroTitle" class="hero-title">
+                        <span class="title-line reveal">IDEE <span class="title-outline">IN</span></span>
+                        <span class="title-line reveal delay-1">FORMA<span class="lime-period">.</span></span>
+                        <span class="title-line title-third reveal delay-2">DIGITALE<span
+                                class="asterisk">✳</span></span>
+                    </h1>
+                    <div class="hero-bottom reveal delay-3">
+                        <p>Creo esperienze digitali essenziali, riconoscibili e costruite per lasciare il segno.</p>
+                        <a class="round-link magnetic" href="#work" aria-label="Scopri i progetti"><span>SCOPRI<br>I
+                                PROGETTI</span><b>↓</b></a>
+                    </div>
+                </div>
 
-      <div class="hero-meta reveal">
-        <span>STRATEGIA / DESIGN / CODICE</span>
-        <span class="hero-meta-center">SCORRI PER ESPLORARE <span>↓</span></span>
-        <span class="hero-coordinates">46°04' N — 11°07' E</span>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="Competenze">
-      <div class="ticker-track">
-        <span>DESIGN CHE HA UN'IDEA</span><i>✳</i><span>CODICE CON CARATTERE</span><i>✳</i><span>ESPERIENZE
-          DIGITALI</span><i>✳</i><span>DESIGN CHE HA UN'IDEA</span><i>✳</i><span>CODICE CON
-          CARATTERE</span><i>✳</i><span>ESPERIENZE DIGITALI</span><i>✳</i>
-      </div>
-    </section>
-
-    <section class="work section-shell section-pad" id="work" aria-labelledby="workTitle">
-      <div class="section-heading reveal">
-        <div>
-          <p class="eyebrow"><span class="eyebrow-line"></span> 01 / SELEZIONE</p>
-          <h2 id="workTitle">LAVORI<br><span>SCELTI</span><sup>04</sup></h2>
-        </div>
-        <p class="section-intro">Una selezione di idee trasformate in identità, prodotti digitali ed esperienze che
-          fanno incontrare forma e funzione.</p>
-      </div>
-
-      <div class="filter-bar reveal" role="group" aria-label="Filtra i progetti">
-        <span class="filter-label">FILTRA PER</span>
-        <button class="filter-btn is-active" data-filter="all" aria-pressed="true">Tutti <span>04</span></button>
-        <button class="filter-btn" data-filter="digital" aria-pressed="false">Digital <span>02</span></button>
-        <button class="filter-btn" data-filter="branding" aria-pressed="false">Branding <span>01</span></button>
-        <button class="filter-btn" data-filter="lab" aria-pressed="false">Lab <span>01</span></button>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card project-card-large reveal" data-category="digital" data-project="forma"
-          tabindex="0" role="button" aria-label="Apri il progetto Forma Studio">
-          <div class="project-visual visual-forma">
-            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1400&q=85"
-              alt="Composizione grafica editoriale colorata" loading="lazy">
-            <div class="visual-overlay forma-overlay"><span class="forma-small">FORM FOLLOWS<br>FEELING.</span><span
-                class="forma-big">FORMA<span>®</span></span><span class="visual-chip">DIGITAL EXPERIENCE ↗</span></div>
-            <span class="project-open" aria-hidden="true">↗</span>
-          </div>
-          <div class="project-info">
-            <div>
-              <p class="project-index">01 / 04</p>
-              <h3>Forma Studio</h3>
+                <div class="hero-art reveal delay-2" aria-label="Composizione astratta verde lime e nera" role="img">
+                    <div class="art-grid"></div>
+                    <div class="art-index">FIG. 001<br>FORMA / FUNZIONE</div>
+                    <div class="art-orbit orbit-one"></div>
+                    <div class="art-orbit orbit-two"></div>
+                    <div class="art-disc"><span>n°</span><strong>01</strong></div>
+                    <div class="art-cross cross-one">+</div>
+                    <div class="art-cross cross-two">+</div>
+                    <div class="art-caption">CREATIVITY<br>IN MOTION</div>
+                    <div class="art-arrow">↗</div>
+                </div>
             </div>
-            <div class="project-tags"><span>Digital design</span><span>2026</span></div>
-          </div>
-        </article>
 
-        <article class="project-card project-card-offset reveal delay-1" data-category="branding" data-project="nord"
-          tabindex="0" role="button" aria-label="Apri il progetto Nord Objects">
-          <div class="project-visual visual-nord">
-            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85"
-              alt="Oggetti di design in un ambiente minimale" loading="lazy">
-            <div class="nord-overlay"><span class="nord-overline">OBJECTS FOR SLOW LIVING</span><span
-                class="nord-name">nord<span>®</span></span><span class="nord-bottom">DESIGNED TO LAST.</span></div>
-            <span class="project-open" aria-hidden="true">↗</span>
-          </div>
-          <div class="project-info">
-            <div>
-              <p class="project-index">02 / 04</p>
-              <h3>Nord Objects</h3>
+            <div class="hero-meta reveal">
+                <span>STRATEGIA / DESIGN / CODICE</span>
+                <span class="hero-meta-center">SCORRI PER ESPLORARE <span>↓</span></span>
+                <span class="hero-coordinates">46°04' N — 11°07' E</span>
             </div>
-            <div class="project-tags"><span>Brand identity</span><span>2025</span></div>
-          </div>
-        </article>
+        </section>
 
-        <article class="project-card project-card-offset-up reveal" data-category="digital" data-project="tempo"
-          tabindex="0" role="button" aria-label="Apri il progetto Tempo Finance">
-          <div class="project-visual visual-tempo">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827778f?auto=format&fit=crop&w=1200&q=85"
-              alt="Schermata di analisi dati e dashboard digitale" loading="lazy">
-            <div class="tempo-panel">
-              <div class="tempo-label">TEMPO / FINANCIAL CLARITY</div>
-              <div class="tempo-number">+24.8<span>%</span></div>
-              <div class="tempo-chart">
-                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <div class="tempo-footer"><span>PORTFOLIO GROWTH</span><span>↗ LIVE DATA</span></div>
-            </div>
-            <span class="project-open" aria-hidden="true">↗</span>
-          </div>
-          <div class="project-info">
-            <div>
-              <p class="project-index">03 / 04</p>
-              <h3>Tempo Finance</h3>
-            </div>
-            <div class="project-tags"><span>Product design</span><span>2025</span></div>
-          </div>
-        </article>
 
-        <article class="project-card reveal delay-1" data-category="lab" data-project="zero" tabindex="0" role="button"
-          aria-label="Apri il progetto Zero Gravity">
-          <div class="project-visual visual-zero">
-            <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1200&q=85"
-              alt="Cielo notturno con stelle" loading="lazy">
-            <div class="zero-overlay"><span class="zero-label">AN INTERACTIVE EXPERIMENT</span><span
-                class="zero-title">ZERO<br><em>GRAVITY</em></span><span class="zero-orb"></span><span
-                class="zero-coord">NO RULES. JUST ORBIT.</span></div>
-            <span class="project-open" aria-hidden="true">↗</span>
-          </div>
-          <div class="project-info">
-            <div>
-              <p class="project-index">04 / 04</p>
-              <h3>Zero Gravity</h3>
+        <section class="ticker" aria-label="Competenze">
+            <div class="ticker-track">
+                <span>DESIGN CHE HA UN'IDEA</span><i>✳</i><span>CODICE CON CARATTERE</span><i>✳</i><span>ESPERIENZE
+                    DIGITALI</span><i>✳</i><span>DESIGN CHE HA UN'IDEA</span><i>✳</i><span>CODICE CON
+                    CARATTERE</span><i>✳</i><span>ESPERIENZE DIGITALI</span><i>✳</i>
             </div>
-            <div class="project-tags"><span>Creative coding</span><span>2025</span></div>
-          </div>
-        </article>
-      </div>
-      <div class="work-foot reveal"><span>OGNI PROGETTO INIZIA CON UNA BUONA DOMANDA.</span><a href="#contact"
-          class="text-link">HAI UN'IDEA? PARLIAMONE <span>↗</span></a></div>
-    </section>
+        </section>
 
-    <section class="manifesto" aria-labelledby="manifestoTitle">
-      <div class="manifesto-grid section-shell">
-        <p class="eyebrow reveal"><span class="eyebrow-line"></span> IL MIO APPROCCIO</p>
-        <div class="manifesto-content">
-          <h2 id="manifestoTitle" class="reveal">NON È SOLO<br>COME <span>APPARE.</span><br>È COME <em>FUNZIONA.</em>
-          </h2>
-          <div class="manifesto-bottom reveal"><span class="manifesto-star">✳</span>
-            <p>Credo nel design che semplifica senza diventare anonimo. Unisco pensiero strategico, sensibilità visiva e
-              tecnologia per costruire esperienze digitali con uno scopo preciso.</p>
-          </div>
+        <section class="stack-strip section-shell" id="stack" aria-labelledby="stackTitle">
+            <div class="stack-topline reveal">
+                <p class="eyebrow"><span class="eyebrow-line"></span> 00 / TECH STACK</p>
+                <h2 id="stackTitle">LINGUAGGI, FRAMEWORK & TOOLS</h2>
+                <span class="stack-note">TECNOLOGIE PRINCIPALI <span>↘</span></span>
+            </div>
+            <div class="stack-grid">
+                <div class="stack-group reveal">
+                    <h3>LINGUAGGI</h3>
+                    <div class="stack-tags">
+                        <span class="stack-tag">HTML5</span>
+                        <span class="stack-tag">CSS3</span>
+                        <span class="stack-tag">JavaScript</span>
+                        <span class="stack-tag">TypeScript</span>
+                        <span class="stack-tag">C#</span>
+                        <span class="stack-tag">Python</span>
+                        <span class="stack-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="stack-group reveal delay-1">
+                    <h3>FRAMEWORK & LIBRERIE</h3>
+                    <div class="stack-tags">
+                        <span class="stack-tag">React</span>
+                        <span class="stack-tag">Next.js</span>
+                        <span class="stack-tag">ASP.NET</span>
+                        <span class="stack-tag">Angular</span>
+                        <span class="stack-tag">GSAP</span>
+                        <span class="stack-tag">Node.js</span>
+                        <span class="stack-tag">MySQL</span>
+                        <span class="stack-tag">Node.js</span>
+
+                    </div>
+                </div>
+                <div class="stack-group reveal delay-2">
+                    <h3>TOOLS</h3>
+                    <div class="stack-tags">
+                        <span class="stack-tag">Git</span>
+                        <span class="stack-tag">GitHub</span>
+                        <span class="stack-tag">Bootstrap</span>
+                        <span class="stack-tag">Tailwind css</span>
+                        <span class="stack-tag">Figma</span>
+                        <span class="stack-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work section-shell section-pad" id="work" aria-labelledby="workTitle">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-line"></span> 01 / SELEZIONE</p>
+                    <h2 id="workTitle">LAVORI<br><span>SCELTI</span><sup>04</sup></h2>
+                </div>
+                <p class="section-intro">Una selezione di idee trasformate in identità, prodotti digitali ed esperienze
+                    che fanno incontrare forma e funzione.</p>
+            </div>
+
+            <div class="filter-bar reveal" role="group" aria-label="Filtra i progetti">
+                <span class="filter-label">FILTRA PER</span>
+                <button class="filter-btn is-active" data-filter="all" aria-pressed="true">Tutti
+                    <span>04</span></button>
+                <button class="filter-btn" data-filter="digital" aria-pressed="false">Digital <span>02</span></button>
+                <button class="filter-btn" data-filter="branding" aria-pressed="false">Branding <span>01</span></button>
+                <button class="filter-btn" data-filter="lab" aria-pressed="false">Lab <span>01</span></button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card project-card-large reveal" data-category="digital" data-project="forma"
+                    tabindex="0" role="button" aria-label="Apri il progetto Forma Studio">
+                    <div class="project-visual visual-forma">
+                        <img src="assets/img/righi-ide.png"
+                            alt="Composizione grafica editoriale colorata" loading="lazy">
+                        <div class="visual-overlay forma-overlay"><span class="forma-small">FORM
+                                FOLLOWS<br>FEELING.</span><span class="forma-big">FORMA<span>®</span></span><span
+                                class="visual-chip">DIGITAL EXPERIENCE ↗</span></div>
+                        <span class="project-open" aria-hidden="true">↗</span>
+                    </div>
+                    <div class="project-info">
+                        <div>
+                            <p class="project-index">01 / 04</p>
+                            <h3>RIGHI-IDE Impara con la AI</h3>
+                        </div>
+                        <div class="project-tags"><span>Digital design</span><span>2026</span></div>
+                    </div>
+                </article>
+
+                <!-- <article class="project-card project-card-offset reveal delay-1" data-category="branding"
+                    data-project="nord" tabindex="0" role="button" aria-label="Apri il progetto Nord Objects">
+                    <div class="project-visual visual-nord">
+                        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85"
+                            alt="Oggetti di design in un ambiente minimale" loading="lazy">
+                        <div class="nord-overlay"><span class="nord-overline">OBJECTS FOR SLOW LIVING</span><span
+                                class="nord-name">nord<span>®</span></span><span class="nord-bottom">DESIGNED TO
+                                LAST.</span></div>
+                        <span class="project-open" aria-hidden="true">↗</span>
+                    </div>
+                    <div class="project-info">
+                        <div>
+                            <p class="project-index">02 / 04</p>
+                            <h3>Nord Objects</h3>
+                        </div>
+                        <div class="project-tags"><span>Brand identity</span><span>2025</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-offset-up reveal" data-category="digital" data-project="tempo"
+                    tabindex="0" role="button" aria-label="Apri il progetto Tempo Finance">
+                    <div class="project-visual visual-tempo">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827778f?auto=format&fit=crop&w=1200&q=85"
+                            alt="Schermata di analisi dati e dashboard digitale" loading="lazy">
+                        <div class="tempo-panel">
+                            <div class="tempo-label">TEMPO / FINANCIAL CLARITY</div>
+                            <div class="tempo-number">+24.8<span>%</span></div>
+                            <div class="tempo-chart">
+                                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                            </div>
+                            <div class="tempo-footer"><span>PORTFOLIO GROWTH</span><span>↗ LIVE DATA</span></div>
+                        </div>
+                        <span class="project-open" aria-hidden="true">↗</span>
+                    </div>
+                    <div class="project-info">
+                        <div>
+                            <p class="project-index">03 / 04</p>
+                            <h3>Tempo Finance</h3>
+                        </div>
+                        <div class="project-tags"><span>Product design</span><span>2025</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal delay-1" data-category="lab" data-project="zero" tabindex="0"
+                    role="button" aria-label="Apri il progetto Zero Gravity">
+                    <div class="project-visual visual-zero">
+                        <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1200&q=85"
+                            alt="Cielo notturno con stelle" loading="lazy">
+                        <div class="zero-overlay"><span class="zero-label">AN INTERACTIVE EXPERIMENT</span><span
+                                class="zero-title">ZERO<br><em>GRAVITY</em></span><span class="zero-orb"></span><span
+                                class="zero-coord">NO RULES. JUST ORBIT.</span></div>
+                        <span class="project-open" aria-hidden="true">↗</span>
+                    </div>
+                    <div class="project-info">
+                        <div>
+                            <p class="project-index">04 / 04</p>
+                            <h3>Zero Gravity</h3>
+                        </div>
+                        <div class="project-tags"><span>Creative coding</span><span>2025</span></div>
+                    </div>
+                </article> -->
+            </div>
+            <div class="work-foot reveal"><span>OGNI PROGETTO INIZIA CON UNA BUONA DOMANDA.</span><a href="#contact"
+                    class="text-link">HAI UN'IDEA? PARLIAMONE <span>↗</span></a></div>
+        </section>
+
+        <section class="manifesto" aria-labelledby="manifestoTitle">
+            <div class="manifesto-grid section-shell">
+                <p class="eyebrow reveal"><span class="eyebrow-line"></span> IL MIO APPROCCIO</p>
+                <div class="manifesto-content">
+                    <h2 id="manifestoTitle" class="reveal">NON È SOLO<br>COME <span>APPARE.</span><br>È COME
+                        <em>FUNZIONA.</em>
+                    </h2>
+                    <div class="manifesto-bottom reveal"><span class="manifesto-star">✳</span>
+                        <p>Credo nel design che semplifica senza diventare anonimo. Unisco pensiero strategico,
+                            sensibilità visiva e tecnologia per costruire esperienze digitali con uno scopo preciso.</p>
+                    </div>
+                </div>
+                <div class="manifesto-side reveal"><span>FORMA</span><span
+                        class="manifesto-side-mark">×</span><span>FUNZIONE</span><span
+                        class="manifesto-side-bottom">NESSUN RUMORE.<br>SOLO CIÒ CHE CONTA.</span></div>
+            </div>
+        </section>
+
+        <section class="about section-shell section-pad" id="about" aria-labelledby="aboutTitle">
+            <div class="about-head reveal">
+                <p class="eyebrow"><span class="eyebrow-line"></span> 02 / PROFILO</p><span class="about-stamp">IN
+                    BREVE<br>MA BENE. ↘</span>
+            </div>
+            <div class="about-layout">
+                <h2 id="aboutTitle" class="about-title reveal">PIACERE,<br><span>SONO</span><br>[SIMONE]<span
+                        class="lime-period">.</span></h2>
+                <div class="about-copy reveal delay-1">
+                    <p class="about-lead">Un creativo digitale con un debole per le idee chiare, i dettagli giusti e le
+                        cose fatte bene.</p>
+                    <p>Lavoro tra direzione creativa, UI/UX e sviluppo front-end. Dalla prima intuizione al pixel
+                        finale, mi piace trovare il punto in cui un'identità forte incontra un'esperienza semplice da
+                        usare.</p><a href="#contact" class="text-link">LAVORIAMO INSIEME <span>↗</span></a>
+                </div>
+            </div>
+            <div class="stats-grid reveal">
+                <div class="stat"><strong>04<span>+</span></strong><span>PROGETTI SELEZIONATI</span></div>
+                <div class="stat"><strong>03</strong><span>AREE DI COMPETENZA</span></div>
+                <div class="stat"><strong>∞</strong><span>CURIOSITÀ IN CORSO</span></div>
+            </div>
+            <div class="expertise reveal"><span class="expertise-label">COSA PORTO AL TAVOLO</span>
+                <div class="expertise-tags"><span>Art direction</span><span>UI / UX design</span><span>Creative
+                        development</span><span>Visual identity</span><span>Motion & interaction</span></div>
+            </div>
+        </section>
+
+        <section class="contact section-shell" id="contact" aria-labelledby="contactTitle">
+            <div class="contact-top reveal">
+                <p class="eyebrow"><span class="eyebrow-line"></span> 03 / CONTATTI</p><span>LA PROSSIMA BELLA
+                    IDEA?</span>
+            </div>
+            <div class="contact-main reveal">
+                <h2 id="contactTitle">I MIEI <br><span>CONTATTI.</span><sup>↗</sup></h2>
+                <a class="contact-circle magnetic" href="mailto:righisimone06@gmail.com"
+                    aria-label="Scrivimi una email"><span>SCRIVIMI<br>UNA MAIL</span><b>↗</b></a>
+            </div>
+
+            <div class="stats-grid reveal">
+
+                <a href="https://www.instagram.com/simone.righi_/" class="stat stat-link" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visita il mio profilo Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <span>INSTAGRAM</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square external-icon" aria-hidden="true"></i>
+                </a>    
+
+                <a href="https://it.linkedin.com/in/simone-righi-?trk=people-guest_people_search-card" class="stat stat-link" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visita il mio profilo LinkedIn">
+                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                    <span>LINKEDIN</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square external-icon" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://github.com/SimoRighi06" class="stat stat-link" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visita il mio profilo GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GITHUB</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square external-icon" aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+            <!-- <div class="contact-bottom reveal">
+                <p>Hai un progetto in mente, una sfida interessante<br>o vuoi semplicemente dire ciao?</p><a
+                    class="contact-email" href="mailto:ciao@tuodominio.it">CIAO@TUODOMINIO.IT <span>↗</span></a>
+            </div> -->
+        </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+        <a class="brand" href="#top">SIMONE RIGHI<span>®</span></a>
+        <span class="footer-note">IDEATO CON INTENZIONE. COSTRUITO CON CURA.</span>
+        <div class="footer-links"><a href="#top">TORNA
+                SU ↑</a></div>
+        <span class="copyright">© <span id="year">2026</span> — TUTTI I DIRITTI RISERVATI</span>
+    </footer>
+
+    <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+        <button class="modal-close" id="modalClose" aria-label="Chiudi progetto">×</button>
+        <div class="modal-kicker"><span class="status-dot"></span> CASE STUDY / <span id="modalNumber">01</span></div>
+        <h2 id="modalTitle">Project title</h2>
+        <p id="modalDescription"></p>
+        <div class="modal-details">
+            <div><span>AMBITO</span><strong id="modalScope"></strong></div>
+            <div><span>ANNO</span><strong id="modalYear"></strong></div>
         </div>
-        <div class="manifesto-side reveal"><span>FORMA</span><span
-            class="manifesto-side-mark">×</span><span>FUNZIONE</span><span class="manifesto-side-bottom">NESSUN
-            RUMORE.<br>SOLO CIÒ CHE CONTA.</span></div>
-      </div>
-    </section>
-
-    <section class="about section-shell section-pad" id="about" aria-labelledby="aboutTitle">
-      <div class="about-head reveal">
-        <p class="eyebrow"><span class="eyebrow-line"></span> 02 / PROFILO</p><span class="about-stamp">IN BREVE<br>MA
-          BENE. ↘</span>
-      </div>
-      <div class="about-layout">
-        <h2 id="aboutTitle" class="about-title reveal">PIACERE,<br><span>SONO</span><br>[IL TUO NOME]<span
-            class="lime-period">.</span></h2>
-        <div class="about-copy reveal delay-1">
-          <p class="about-lead">Un creativo digitale con un debole per le idee chiare, i dettagli giusti e le cose fatte
-            bene.</p>
-          <p>Lavoro tra direzione creativa, UI/UX e sviluppo front-end. Dalla prima intuizione al pixel finale, mi piace
-            trovare il punto in cui un'identità forte incontra un'esperienza semplice da usare.</p><a href="#contact"
-            class="text-link">LAVORIAMO INSIEME <span>↗</span></a>
-        </div>
-      </div>
-      <div class="stats-grid reveal">
-        <div class="stat"><strong>04<span>+</span></strong><span>PROGETTI SELEZIONATI</span></div>
-        <div class="stat"><strong>03</strong><span>AREE DI COMPETENZA</span></div>
-        <div class="stat"><strong>∞</strong><span>CURIOSITÀ IN CORSO</span></div>
-      </div>
-      <div class="expertise reveal"><span class="expertise-label">COSA PORTO AL TAVOLO</span>
-        <div class="expertise-tags"><span>Art direction</span><span>UI / UX design</span><span>Creative
-            development</span><span>Visual identity</span><span>Motion & interaction</span></div>
-      </div>
-    </section>
-
-    <section class="contact section-shell" id="contact" aria-labelledby="contactTitle">
-      <div class="contact-top reveal">
-        <p class="eyebrow"><span class="eyebrow-line"></span> 03 / CONTATTI</p><span>LA PROSSIMA BELLA IDEA?</span>
-      </div>
-      <div class="contact-main reveal">
-        <h2 id="contactTitle">DIAMOLE<br><span>FORMA.</span><sup>↗</sup></h2>
-        <a class="contact-circle magnetic" href="mailto:ciao@tuodominio.it"
-          aria-label="Scrivimi una email"><span>SCRIVIMI<br>UNA MAIL</span><b>↗</b></a>
-      </div>
-      <div class="contact-bottom reveal">
-        <p>Hai un progetto in mente, una sfida interessante<br>o vuoi semplicemente dire ciao?</p><a
-          class="contact-email" href="mailto:ciao@tuodominio.it">CIAO@TUODOMINIO.IT <span>↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-shell">
-    <a class="brand" href="#top">NOME COGNOME<span>®</span></a>
-    <span class="footer-note">IDEATO CON INTENZIONE. COSTRUITO CON CURA.</span>
-    <div class="footer-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a
-        href="https://www.instagram.com/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="#top">TORNA SU ↑</a>
-    </div>
-    <span class="copyright">© <span id="year">2026</span> — TUTTI I DIRITTI RISERVATI</span>
-  </footer>
-
-  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
-    <button class="modal-close" id="modalClose" aria-label="Chiudi progetto">×</button>
-    <div class="modal-kicker"><span class="status-dot"></span> CASE STUDY / <span id="modalNumber">01</span></div>
-    <h2 id="modalTitle">Project title</h2>
-    <p id="modalDescription"></p>
-    <div class="modal-details">
-      <div><span>AMBITO</span><strong id="modalScope"></strong></div>
-      <div><span>ANNO</span><strong id="modalYear"></strong></div>
-    </div>
-    <p class="modal-note">Questa è una scheda dimostrativa: sostituisci i contenuti con i dettagli reali del progetto.
-    </p>
-    <a href="#contact" class="text-link modal-contact">PARLIAMONE <span>↗</span></a>
-  </dialog>
-  <div class="modal-backdrop" id="modalBackdrop"></div>
+        <p class="modal-note">Questa è una scheda dimostrativa: sostituisci i contenuti con i dettagli reali del
+            progetto.</p>
+        <a href="https://righi-ide.vercel.app/" target="_blank" class="text-link modal-contact">PROVALA <span>↗</span></a>
+    </dialog>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
 </body>
 
 </html>
